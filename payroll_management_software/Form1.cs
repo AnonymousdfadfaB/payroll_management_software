@@ -21,5 +21,11 @@ namespace payroll_management_software
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DashBoard das = new payroll_management_software.DashBoard();
+            das.ShowDialog();
+        }
     }
 }
