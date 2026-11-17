@@ -75,8 +75,8 @@
             // button1
             // 
             button1.BackColor = Color.Turquoise;
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatAppearance.MouseOverBackColor = Color.Red;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseOverBackColor = Color.Cyan;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Century Gothic", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
@@ -155,6 +155,7 @@
             button2.Size = new Size(65, 64);
             button2.TabIndex = 2;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // pictureBox1
             // 
@@ -172,7 +173,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1937, 712);
+            ClientSize = new Size(2266, 712);
             Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(label4);

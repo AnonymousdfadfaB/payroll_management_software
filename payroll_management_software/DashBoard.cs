@@ -19,5 +19,20 @@ namespace payroll_management_software
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void uC_Employee1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            uC_Employee1.BringToFront();
+        }
     }
 }

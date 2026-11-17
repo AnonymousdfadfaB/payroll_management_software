@@ -39,6 +39,9 @@
             button6 = new Button();
             button5 = new Button();
             label4 = new Label();
+            button7 = new Button();
+            panel3 = new Panel();
+            uC_Employee1 = new UC_Employee();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -55,7 +58,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(321, 1136);
+            panel1.Size = new Size(321, 1367);
             panel1.TabIndex = 0;
             // 
             // button4
@@ -102,6 +105,7 @@
             button2.Text = "Employee";
             button2.TextAlign = ContentAlignment.BottomCenter;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -133,9 +137,10 @@
             // 
             panel2.Anchor = AnchorStyles.Right;
             panel2.BackColor = Color.MediumTurquoise;
+            panel2.Controls.Add(panel3);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(button5);
-            panel2.Location = new Point(321, 119);
+            panel2.Location = new Point(321, 234);
             panel2.Name = "panel2";
             panel2.Size = new Size(1907, 168);
             panel2.TabIndex = 1;
@@ -183,12 +188,45 @@
             label4.TabIndex = 2;
             label4.Text = "Payroll Management Software";
             // 
+            // button7
+            // 
+            button7.BackColor = Color.White;
+            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
+            button7.BackgroundImageLayout = ImageLayout.Center;
+            button7.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Location = new Point(2042, 27);
+            button7.Name = "button7";
+            button7.Size = new Size(65, 64);
+            button7.TabIndex = 3;
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
+            // 
+            // panel3
+            // 
+            panel3.Location = new Point(0, 174);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1907, 1037);
+            panel3.TabIndex = 4;
+            // 
+            // uC_Employee1
+            // 
+            uC_Employee1.BackColor = Color.White;
+            uC_Employee1.Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uC_Employee1.Location = new Point(328, 408);
+            uC_Employee1.Margin = new Padding(4, 3, 4, 3);
+            uC_Employee1.Name = "uC_Employee1";
+            uC_Employee1.Size = new Size(2500, 1468);
+            uC_Employee1.TabIndex = 4;
+            // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(14F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(2233, 1136);
+            ClientSize = new Size(2233, 1367);
+            Controls.Add(uC_Employee1);
+            Controls.Add(button7);
             Controls.Add(label4);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -219,5 +257,8 @@
         private Button button5;
         private Button button6;
         private Label label4;
+        private Button button7;
+        private Panel panel3;
+        private UC_Employee uC_Employee1;
     }
 }
